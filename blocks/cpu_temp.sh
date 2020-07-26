@@ -1,12 +1,12 @@
-#!/bin/sh
+#!/bin/dash
 
-crit=70
+crit=60
 
 read -r temp </sys/class/thermal/thermal_zone0/temp
 temp=${temp%???}
 
 if [ "$temp" -ge "$crit" ] ; then
-    echo "${temp}°C"
+    echo " ${temp}°C"
 else
-    echo "${temp}°C"
+    echo " ${temp}°C"
 fi

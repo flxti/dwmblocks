@@ -1,6 +1,6 @@
-#!/bin/sh
-case "$1" in
-    1) pamixer --toggle-mute ;;
-    2) exec pavucontrol-qt ;;
-    3) pamixer --set-volume 60 ;;
+#!/bin/dash
+case $BLOCK_BUTTON in
+    #1) pamixer --toggle-mute ;;
+    1) pactl set-sink-mute 1 toggle ;;
+    2) exec pavucontrol ;;
 esac

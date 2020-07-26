@@ -1,2 +1,2 @@
-#!/bin/sh
-echo "$(date '+%H:%M')"
+#!/bin/dash
+echo " $(date '+%H:%M')"

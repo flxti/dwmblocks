@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/dash
 if [ "$1" = 1 ] ; then
     echo ""
 else

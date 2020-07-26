@@ -1,3 +1,6 @@
-#!/bin/sh
-read -r capacity </sys/class/power_supply/BAT0/capacity
-echo "${capacity}%"
+#!/bin/dash
+FILE=/sys/class/power_supply/BAT0/capacity
+if test -f "$FILE"; then
+  read -r capacity <"$FILE"
+  echo "${capacity}%"
+fi

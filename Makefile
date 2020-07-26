@@ -1,5 +1,6 @@
 #PREFIX = /usr/local
-PREFIX = ${HOME}/.local
+#PREFIX = ${HOME}/.local
+PREFIX = /tmp
 
 CC = gcc
 CFLAGS = -O3 -Wall -Wextra

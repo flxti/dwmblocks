@@ -1,9 +1,9 @@
-#!/bin/sh
+#!/bin/dash
 
 volstat=$(pamixer --get-mute --get-volume)
 
 if "${volstat% *}" ; then
-    echo "${volstat#* }%"
+    echo " muted"
 else
-    echo "${volstat#* }%"
+    echo " ${volstat#* }%"
 fi
